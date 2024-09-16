@@ -1,0 +1,7 @@
+{
+  "name": "listaDeContatos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
