@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-title>Registrar Contato</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating" style="font-weight: bold;">ID</ion-label>
+    <ion-input [(ngModel)]="idSave" style="margin-top: 10px;"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" style="font-weight: bold;">Nome</ion-label>
+    <ion-input [(ngModel)]="nomeSave" style="margin-top: 10px;"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" style="font-weight: bold;">Número</ion-label>
+    <ion-input [(ngModel)]="numeroSave" style="margin-top: 10px;"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" style="font-weight: bold;">Email</ion-label>
+    <ion-input [(ngModel)]="emailSave" style="margin-top: 10px;"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="saveContact(idSave, nomeSave, numeroSave, emailSave)">
+    Salvar Contato
+  </ion-button>
+  <ion-button expand="block" color="medium" (click)="navigateToContactData()">
+    Cancelar
+  </ion-button>
+</ion-content>
